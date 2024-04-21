@@ -1,9 +1,19 @@
 {
   "profiles": {
     "(Default)": {
-      "name": "(HoldGrand)",
+      "name": "(Minecraft 1.20.4)",
+      "lastVersionId": "1.20.4"
+    }
+  },
+  "selectedProfile": "(Minecraft 1.20.4)"
+}
+
+{
+  "profiles": {
+    "(Default)": {
+      "name": "(Minecraft 1.12.2)",
       "lastVersionId": "1.12.2"
     }
   },
-  "selectedProfile": "(HoldGrand)"
+  "selectedProfile": "(Minecraft 1.12.2)"
 }
