@@ -80,6 +80,7 @@ public class MainActivity extends BaseActivity implements ControlButtonMenuListe
     private ListView navDrawer;
     private View mDrawerPullButton;
     private GyroControl mGyroControl = null;
+    private boolean isFirstRun;
     public static ControlLayout mControlLayout;
 
     MinecraftProfile minecraftProfile;
@@ -89,6 +90,41 @@ public class MainActivity extends BaseActivity implements ControlButtonMenuListe
     public ArrayAdapter<String> ingameControlsEditorArrayAdapter;
     public AdapterView.OnItemClickListener ingameControlsEditorListener;
     private GameService.LocalBinder mServiceBinder;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        // Проверка, было ли приложение запущено ранее
+        SharedPreferences pref = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+        isFirstRun = pref.getBoolean("isFirstRun", true);
+
+        if (isFirstRun) {
+            // Создание и отображение диалогового окна при первом запуске
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle("Добро пожаловать!")
+                    .setMessage("Автор приложения: [Имя и фамилия]\nПерейти в Telegram канал?")
+                    .setPositiveButton("Да", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            // Открыть Telegram канал после нажатия на кнопку
+                            Intent telegramIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://t.me/your_channel"));
+                            startActivity(telegramIntent);
+                        }
+                    })
+                    .setNegativeButton("Нет", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            dialog.dismiss();
+                        }
+                    });
+            AlertDialog dialog = builder.create();
+            dialog.show();
+
+            // Сохранение информации о том, что приложение было запущено
+            pref.edit().putBoolean("isFirstRun", false).apply();
+        }
+    }
+}
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
