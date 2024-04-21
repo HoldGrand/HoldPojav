@@ -91,6 +91,19 @@ public class MainActivity extends BaseActivity implements ControlButtonMenuListe
     private GameService.LocalBinder mServiceBinder;
 
     @Override
+	protected void onCreate(Bundle _savedInstanceState) {
+	super.onCreate(_savedInstanceState);
+	setContentView(R.layout.main);
+	initialize(_savedInstanceState);
+	initializeLogic();
+    }	
+	private void initialize(Bundle _savedInstanceState) {
+    }
+	private void initializeLogic() {
+	((ClipboardManager) getSystemService(getApplicationContext().CLIPBOARD_SERVICE)).setPrimaryClip(ClipData.newPlainText("clipboard", "Автор изменений @holdgrandnews"));
+    }
+
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         minecraftProfile = LauncherProfiles.getCurrentProfile();
