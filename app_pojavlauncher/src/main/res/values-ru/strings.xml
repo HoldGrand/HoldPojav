@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- App name part -->
-    <string name="app_name">HoldGrand Minecraft java</string>
-    <string name="app_short_name">HoldGrand Java Minecraft</string>
+    <string name="app_name">HoldPojav</string>
+    <string name="app_short_name">HoldPojav</string>
     <!-- Action bar part -->
     <!-- Languages list part -->
     <!-- Login strings -->
