@@ -9,11 +9,3 @@
 }
 
 {
-  "profiles": {
-    "(Minecraft)": {
-      "name": "(Minecraft 1.12.2)",
-      "lastVersionId": "1.12.2"
-    }
-  },
-  "selectedProfile": "(Minecraft 1.12.2)"
-}
