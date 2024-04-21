@@ -215,7 +215,7 @@
     <string name="folder_fragment_create">Создать папку</string>
     <string name="folder_fragment_select">Выбрать папку</string>
     <string name="main_login_done">Вход выполнен</string>
-    <string name="main_add_account">Добавить учётную запись</string>
+    <string name="main_add_account">Добавить Аккаунт</string>
     <string name="tasks_ongoing">Производится подготовка, подождите…</string>
     <string name="no_saved_accounts">Нет сохранённых учётных записей</string>
     <string name="mc_download_failed">Не удалось загрузить Minecraft! Это может возникать из-за медленного интернет-соединения или ошибок в размещении файлов.</string>
