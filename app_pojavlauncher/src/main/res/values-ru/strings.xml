@@ -27,7 +27,6 @@
     -->
     <!-- MCLauncherActivity: Tabs -->
     <string name="mcl_tab_wiki">Сайт</string>
-    <string name="mcl_tab_server">HoldGrand - server</string>
     <!-- MCLauncherActivity: Account status -->
     <!-- MCLauncherActivity: Strings -->
     <string name="mcl_launch_cleancache">Очистка файлов кэша</string>
