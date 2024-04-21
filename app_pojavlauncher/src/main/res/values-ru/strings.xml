@@ -56,7 +56,7 @@
     <string name="mcl_setting_veroption_release">Релизы</string>
     <string name="mcl_setting_veroption_snapshot">Снапшоты</string>
     <string name="mcl_setting_veroption_oldalpha">Старые альфа</string>
-    <string name="mcl_setting_veroption_oldbeta">Старые бета</string>
+    <string name="mcl_setting_veroption_oldbeta">Очень старые версии</string>
     <string name="mcl_setting_java_sandbox">Безопасное выполнение .jar</string>
     <string name="mcl_setting_java_sandbox_subtitle">Управляет доступностью менеджера безопасной среды Java при выполнении .jar-файла.</string>
     <string name="mcl_version_clone">Копировать</string>
